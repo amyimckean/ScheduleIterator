@@ -1,11 +1,13 @@
+package Main;
 import java.util.Iterator;
 
-public class AthleticSchedule extends baseSchedule{
+public class MusicalSchedule extends baseSchedule{
 	final int MAX_Schedules = 10;
 	
-	public AthleticSchedule() {
+	public MusicalSchedule() {
 		this.schedules = new Schedule[MAX_Schedules];
 	}
+	
 	public Iterator<Schedule> createIterator() {
 		return new ScheduleIterator(schedules);
 	}

@@ -1,7 +1,8 @@
+package Main;
 import java.time.LocalDateTime;
 
 public class Schedule{
-	String activity;
+	public String activity;
 	LocalDateTime start;
 	LocalDateTime end;
 	

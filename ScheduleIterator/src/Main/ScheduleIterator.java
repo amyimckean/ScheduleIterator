@@ -10,14 +10,13 @@ public class ScheduleIterator implements Iterator {
 	}
 	
 	public boolean hasNext() {
-		if(index < schedules.length) {
+		if(index < schedules.length && schedules[index] != null) {
 			return true;
 		}
 		return false;
 	}
 
 	public Schedule next() {
-		if(!hasNext()) {return null;}
 		Schedule current = schedules[index];
 		++index;
 		return current;

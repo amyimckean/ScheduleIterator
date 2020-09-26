@@ -17,6 +17,7 @@ public class ScheduleIterator implements Iterator {
 	}
 
 	public Schedule next() {
+		if(!hasNext()) {return null;}
 		Schedule current = schedules[index];
 		++index;
 		return current;
